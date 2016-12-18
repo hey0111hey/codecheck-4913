@@ -37,7 +37,7 @@ function main(argv) {
           if(res['status']!='OK'){
             console.log('error:' + res['code']);
           }else{
-            var count = res['result']['numFound'];
+            var count =parseInt(res['result']['numFound']);
             var ans = {'name':query,'count':count};
             data.push(ans);
           }
