@@ -12,7 +12,7 @@ function main(argv) {
     data.forEach(function(v){
       if(ans['count']<=v['count'])ans=v;
     });
-    console.log(ans);
+    console.log(JSON.stringify(ans));
   };
 
   var getData=function(onload){
