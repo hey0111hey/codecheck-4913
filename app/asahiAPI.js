@@ -33,7 +33,6 @@ asahiRapper.get= function(parm,ans,onload){
   if(typeof parm['rows'] !== "undefined"){
     url += '&rows='+parm['rows'];
   }
-  console.log(url);
 
   request(url, function (error, response, xml) {
     if (!error && response.statusCode == 200) {
